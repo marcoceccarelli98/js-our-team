@@ -34,18 +34,29 @@ const myTeam = [
 ];
 
 for (let i = 0; i < myTeam.length; i++) {
+    //create elements
     const elementContainer = document.querySelector('.container');
+    const card = document.createElement('div');
     const name = document.createElement('h1');
     const role = document.createElement('h2');
     const img = document.createElement('img');
 
+    //add class card
+    card.classList.add('card');
+    //fill name label
     name.innerText = myTeam[i].name;
+    //fill role label
     role.innerText = myTeam[i].role;
+    //fill img label
     img.src = './img/' + myTeam[i].img;
 
-    elementContainer.append(name);
-    elementContainer.append(role);
-    elementContainer.append(img);
+    //append elements to card
+    card.append(name);
+    card.append(role);
+    card.append(img);
+
+    //append card to container
+    elementContainer.append(card);
 
     // console.log(myTeam[i].name);
     // console.log(myTeam[i].role);
