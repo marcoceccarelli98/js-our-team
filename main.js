@@ -37,11 +37,11 @@ for (let i = 0; i < myTeam.length; i++) {
     const elementContainer = document.querySelector('.container');
     const name = document.createElement('h1');
     const role = document.createElement('h2');
-    const img = document.createElement('h3');
+    const img = document.createElement('img');
 
     name.innerText = myTeam[i].name;
     role.innerText = myTeam[i].role;
-    img.innerText = myTeam[i].img;
+    img.src = './img/' + myTeam[i].img;
 
     elementContainer.append(name);
     elementContainer.append(role);
