@@ -33,3 +33,9 @@ const myTeam = [
     }
 ];
 
+for (let i = 0; i < myTeam.length; i++) {
+    console.log(myTeam[i].name);
+    console.log(myTeam[i].role);
+    console.log(myTeam[i].img);
+}
+
